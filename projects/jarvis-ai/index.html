@@ -30,16 +30,23 @@
         .back {
             color: #00eaff;
             text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back:hover {
+            text-decoration: underline;
         }
 
         h1 {
             color: #00eaff;
             margin-top: 30px;
+            font-size: 42px;
         }
 
         .intro {
             color: #aeb8c7;
             max-width: 750px;
+            font-size: 18px;
         }
 
         .grid {
@@ -54,6 +61,13 @@
             border: 1px solid #202a38;
             border-radius: 15px;
             padding: 22px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #00eaff;
+            box-shadow: 0 0 20px rgba(0, 234, 255, 0.15);
         }
 
         .card h2 {
@@ -71,6 +85,16 @@
             border-top: 1px solid #202a38;
             padding: 25px;
             margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .container {
+                width: 92%;
+            }
         }
     </style>
 </head>
@@ -114,7 +138,7 @@
                 <h2>💻 App Control</h2>
                 <p>
                     Mengontrol dan membuka aplikasi komputer
-                    melalui perintah.
+                    melalui perintah suara.
                 </p>
             </div>
 
@@ -137,8 +161,8 @@
             <div class="card">
                 <h2>⚙️ Hybrid Assistant</h2>
                 <p>
-                    Dirancang sebagai personal assistant yang
-                    menggabungkan voice command dan AI.
+                    Menggabungkan voice command dan AI
+                    sebagai personal assistant.
                 </p>
             </div>
 
